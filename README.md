@@ -35,7 +35,7 @@ Apart from all the properties from the `Map`, the `Bimap` offers three extra met
 
 | Method                                                           | Description                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Bimap<K, V>.prototype.getByValue(value: V): K &#124; undefined` | Returns the key associated with the given value or `undefined` if it doesn't exist. |
+| `Bimap<K, V>.prototype.getByValue(value: V): K \| undefined`     | Returns the key associated with the given value or `undefined` if it doesn't exist. |
 | `Bimap<K, V>.prototype.hasValue(value: V): boolean`              | Returns `true` if the given value is in the bimap and `false` otherwise.                                                                                                                                                                        |
 | `Bimap<K, V>.prototype.deleteByValue(value: V): boolean`         | Deletes a bimap entry that has a value equal to the one given as the argument. Returns `true` if the deletion was successful and `false` otherwise.                                                                                             |
 
