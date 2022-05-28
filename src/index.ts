@@ -1,0 +1,1 @@
+export { Bimap } from "./bimap";

@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test.ts"],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist/"
+  }
+}

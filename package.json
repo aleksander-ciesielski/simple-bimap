@@ -1,0 +1,38 @@
+{
+  "name": "simple-bimap",
+  "version": "1.0.0",
+  "author": "Aleksander Ciesielski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksander-ciesielski/simple-bimap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aleksander-ciesielski/simple-bimap/issues"
+  },
+  "keywords": [
+    "map",
+    "bimap",
+    "bidirectional-map"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "babel src -d dist --extensions .ts && tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "yarn test && yarn build"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "typescript": "^4.7.2",
+    "@babel/core": "^7.18.2",
+    "@babel/cli": "^7.17.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "babel-preset-minify": "^0.5.2",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.3"
+  }
+}
